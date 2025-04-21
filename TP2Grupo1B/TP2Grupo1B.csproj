@@ -47,18 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agregar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Agregar.Designer.cs">
-      <DependentUpon>Agregar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AgregarImagen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AgregarImagen.Designer.cs">
-      <DependentUpon>AgregarImagen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Buscar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,37 +59,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListadoArticulo.cs">
+    <Compile Include="LstadoArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListadoArticulo.Designer.cs">
-      <DependentUpon>ListadoArticulo.cs</DependentUpon>
+    <Compile Include="LstadoArticulo.Designer.cs">
+      <DependentUpon>LstadoArticulo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modificar.Designer.cs">
-      <DependentUpon>Modificar.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Producto.cs" />
+    <Compile Include="ProductoNegocio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Agregar.resx">
-      <DependentUpon>Agregar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AgregarImagen.resx">
-      <DependentUpon>AgregarImagen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListadoArticulo.resx">
-      <DependentUpon>ListadoArticulo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modificar.resx">
-      <DependentUpon>Modificar.cs</DependentUpon>
+    <EmbeddedResource Include="LstadoArticulo.resx">
+      <DependentUpon>LstadoArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,16 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\istockphoto-1409329028-612x612.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\dominio\dominio.csproj">
-      <Project>{18108bf2-2653-4ab6-a546-fb931fdf70f0}</Project>
-      <Name>dominio</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\negocio\negocio.csproj">
-      <Project>{e979f250-d5fa-4adf-827f-c20cdd9b22ee}</Project>
-      <Name>negocio</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

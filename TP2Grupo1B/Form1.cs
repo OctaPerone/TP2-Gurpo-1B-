@@ -27,11 +27,11 @@ namespace TP2Grupo1B
         {
             foreach (var item in Application.OpenForms)
             {
-                if (item.GetType() == typeof(LstadoArticulo))
+                if (item.GetType() == typeof(ListadoArticulo))
                     return;
             }
 
-            LstadoArticulo ventana = new LstadoArticulo();
+            ListadoArticulo ventana = new ListadoArticulo();
             ventana.Show();
         }
 
@@ -56,6 +56,18 @@ namespace TP2Grupo1B
             }
 
             Agregar ventana = new Agregar();
+            ventana.Show();
+        }
+
+        private void tlsBtnModificarArtículo_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(frmModificar))
+                    return;
+            }
+
+            frmModificar ventana = new frmModificar();
             ventana.Show();
         }
     }

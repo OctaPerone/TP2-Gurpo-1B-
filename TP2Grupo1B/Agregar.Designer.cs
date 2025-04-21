@@ -107,7 +107,7 @@
             // btnAceptar
             // 
             this.btnAceptar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAceptar.Location = new System.Drawing.Point(16, 334);
+            this.btnAceptar.Location = new System.Drawing.Point(16, 340);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 28);
             this.btnAceptar.TabIndex = 7;
@@ -118,7 +118,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCancelar.Location = new System.Drawing.Point(222, 334);
+            this.btnCancelar.Location = new System.Drawing.Point(222, 340);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 28);
             this.btnCancelar.TabIndex = 8;
@@ -203,7 +203,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbxImagen.Location = new System.Drawing.Point(320, 96);
             this.pbxImagen.Name = "pbxImagen";
-            this.pbxImagen.Size = new System.Drawing.Size(173, 155);
+            this.pbxImagen.Size = new System.Drawing.Size(172, 161);
+            this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxImagen.TabIndex = 16;
             this.pbxImagen.TabStop = false;
             // 
@@ -245,8 +246,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(521, 386);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(520, 392);
             this.Controls.Add(this.lblAstPrecio);
             this.Controls.Add(this.lblAstNombre);
             this.Controls.Add(this.lblAstCodigo);

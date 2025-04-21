@@ -31,12 +31,13 @@ namespace TP2Grupo1B
                 producto.Codigo = txtCodigo.Text;
                 producto.Nombre = txtNombre.Text;
                 producto.Descripcion = txtDescripcion.Text;
-                producto.UrlImagen = txtUrlimagen.Text;
                 producto.Marca = (Marca)cboMarca.SelectedItem; 
                 producto.Categoria = (Categoria) cboCategoria.SelectedItem;
                 producto.Precio = decimal.Parse(txtPrecio.Text);
 
-                                
+                if (!string.IsNullOrWhiteSpace(txtUrlimagen.Text))
+                    producto.Imagenes.Add(new Imagen { UrlImagen = txtUrlimagen.Text });
+
                 negocio.agregar(producto);
                 MessageBox.Show("Agregado exitosamente");
                 Close();
